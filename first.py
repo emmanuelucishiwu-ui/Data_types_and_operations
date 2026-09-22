@@ -298,28 +298,154 @@ from fractions import Fraction
 
 # Age Category and Eligibility Program
 
-# Get user input
-age = int(input("Enter your age: "))
+# # Get user input
+# age = int(input("Enter your age: "))
 
-# Determine age category using if/elif/else
-if age < 13:
-    category = "Child"
-elif 13 <= age <= 17:
-    category = "Teenager"
-elif 18 <= age <= 59:
-    category = "Adult"
-else:
-    category = "Senior Citizen"
+# # Determine age category using if/elif/else
+# if age < 13:
+#     category = "Child"
+# elif 13 <= age <= 17:
+#     category = "Teenager"
+# elif 18 <= age <= 59:
+#     category = "Adult"
+# else:
+#     category = "Senior Citizen"
 
-# Determine eligibility using comparison operators and boolean logic
-can_vote = age >= 18
-can_drive = age >= 18
+# # Determine eligibility using comparison operators and boolean logic
+# can_vote = age >= 18
+# can_drive = age >= 18
 
 # Convert boolean results to "Yes"/"No" strings
-voting_eligibility = "Yes" if can_vote else "No"
-driver_eligibility = "Yes" if can_drive else "No"
+# voting_eligibility = "Yes" if can_vote else "No"
+# driver_eligibility = "Yes" if can_drive else "No"
 
-# Display results
-print(f"Category: {category}")
-print(f"Voting eligibility: {voting_eligibility}")
-print(f"Driver's licence eligibility: {driver_eligibility}")
+# # Display results
+# print(f"Category: {category}")
+# print(f"Voting eligibility: {voting_eligibility}")
+# print(f"Driver's licence eligibility: {driver_eligibility}")
+
+# data structures 
+# list = mutabe collection of data 
+# tuple = immutable collections of data 
+# dictionaries = mutable collection of datain key , value pair
+
+
+# python data structures are specialized contanier used to organize,
+# store, manage, and manipulate collection of data efficiently in computer
+# memory 
+
+# numbers = range(1,10)
+
+# list1 = ["EM", "Uche", 20, True, 5+2j, 5/2, 1==1, 5.5]
+# list2 = list(numbers)
+# print(list2)
+# print(list1)
+
+# tuples = (3,4)
+# print(type(tuples))
+
+# tuples = tuple(numbers)
+# print(tuples)
+
+
+
+
+# list1 = ["EM", "Uche", 20, True, 5+2j, 5/2, 1==1, 5.5]
+# appen = list1.append("Python")
+# print(list1)
+
+# kwargs = dict(name="emma", age=20, course="Python")
+# dict1 = {"name": "EM", "age": 20, "course": "Python"}
+# # dict2 = dict(kwargs)
+# # print(dict2)
+# dict3 = dict([("name", "EM"), ("age", 20), ("course", "Python")])
+# print(dict1)
+# print(kwargs)
+# print(dict3)
+
+
+
+# indexing
+
+# name = "programming"
+# print(name[0])
+# print(name[1])
+
+# print(name[-1])
+# print(name[-2])
+
+
+# list1 = ["EM", "Uche", 20, True, 5+2j, 5/2, 1==1, 5.5]
+# tuple1 = ["EM", "Uche", 20, True, 5+2j, 5/2, "Many", 5.5]
+
+# print(list1[0], list1[3])
+# print(tuple1[0], tuple1[5])
+
+# slicing
+
+# list1 = ["EM", "Uche", 20, True, 5+2j, 5/2, 1==1, 5.5]
+# tuple1 = ["EM", "Uche", 20, True, 5+2j, 5/2, "Many", 5.5]
+
+# print(list1[0:4])
+# print(tuple1[0:4])
+
+
+
+# method
+# dict, str, list, tuple, int
+# dictionary method
+# pop(), copy(), popitem(), items(), get(), keys(), values(), update(), fromkeys(), setdefault()
+
+
+# pop
+# dict3 = dict([("name", "EM"), ("age", 20), ("course", "Python")])
+# print(dict3)
+# dictionary = dict3.pop("age")
+# print(dict3)
+
+# print(dictionary)
+
+# popitem
+
+# dict3 = dict([("name", "EM"), ("age", 20), ("course", "Python")])
+# print(dict3)
+# dictionary = dict3.popitem()
+# print(dict3)
+
+# print(dictionary)
+
+# .items
+
+# dict3 = dict([("name", "EM"), ("age", 20), ("course", "Python")])
+# print(dict3)
+# dictionary = dict3.items()
+
+# print(dictionary)
+
+
+
+# update
+
+# dict3 = dict([("name", "EM"), ("age", 20), ("course", "Python")])
+# print(dict3)
+# dictionary = dict3.update({"name":"emma"})
+# print(dict3)
+
+# print(dictionary)
+
+
+# dict3 = dict([("name", "EM"), ("age", 20), ("course", "Python")])
+# print(dict3)
+# dictionary = dict3.fromkeys("name")
+# print(dict3)
+
+# print(dictionary)
+
+
+
+dict3 = dict([("name", "EM"), ("age", 20), ("course", "Python")])
+print(dict3)
+dictionary = dict3.setdefault("name","emmanue")
+print(dict3)
+
+print(dictionary)
